@@ -1,107 +1,164 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Tianyi Lou's homepage</title>
- 
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']], 
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: true 
-      },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']  
-      }
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Academic homepage of Tianyi Lou / 娄天依.">
+    <title>Tianyi Lou / 娄天依</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-<body style="background-color:white;">
-  <style>
-    h1, h2, h3, h4, h5, h6 { color: #483d8b; }
-    a { color: #483d8b; }
-    .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
-    .gallery figure { margin: 0; }
-    .gallery img { border: 1px solid #ccc; }
-    .gallery figcaption { text-align: center; font-style: italic; color: #666; }
-    .hidden-element {
-      display: none;
-    }
-    .bold-text {
-    /* 设置字体粗细为 bold (粗体) */
-    font-weight: bold; 
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-name" href="#top" aria-label="Tianyi Lou, back to top">
+          <span>Tianyi Lou</span>
+          <span class="site-name-divider" aria-hidden="true">/</span>
+          <span lang="zh-Hans">娄天依</span>
+        </a>
 
-    /* 或者使用数字值，例如 700，这也是粗体 */
-    /* font-weight: 700; */
-}
-  </style>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#talks">Talks</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-<a href="gallery.html">
-    <img src="https://tianyilou18.github.io/gallery/Lou.jpg" width="270" height="300" align="right" alt="me">
-</a>
-  
-<h1>Tianyi Lou 娄天依</h1>
-<p>
-  I defended my thesis on 26 Jun 2026 at <a href="https://math.univ-cotedazur.fr/" target="_blank" rel="noopener">LJAD</a>.
-</p>
-  
-<p>
-  From September 2022 to June 2026, I was PhD student at <a href="https://math.univ-cotedazur.fr/" target="_blank" rel="noopener">LJAD</a> and <a href="https://www-fourier.ujf-grenoble.fr/" target="_blank" rel="noopener">Institut Fourier</a> under the supervision of 
-  <a href="https://chatterj.perso.math.cnrs.fr/" target="_blank" rel="noopener">Indira Chatterji</a> 
-  and <a href="https://www-fourier.univ-grenoble-alpes.fr/~dahmani/" target="_blank" rel="noopener">François Dahmani</a>.
-  
-<table>
-  <tr>
-    <td><strong>E-mail:</strong></td>
-    <td>louty313 <i>at</i> gmail <i>dot</i> com </td>
-  </tr>
+    <main id="main-content" class="page-shell">
+      <section id="about" class="intro section" aria-labelledby="about-title">
+        <img
+          class="profile-photo"
+          src="gallery/profile-photo.jpg"
+          alt="Portrait of Tianyi Lou"
+          width="180"
+          height="180"
+          fetchpriority="high"
+        >
+        <p class="eyebrow">Academic homepage</p>
+        <h1 id="about-title">
+          Tianyi Lou <span class="title-divider" aria-hidden="true">/</span>
+          <span lang="zh-Hans">娄天依</span>
+        </h1>
+        <p class="lead">I am on the job market now.</p>
 
-</table>
- 
-<p>
-<strong>Address</strong>: UMR 5582-Laboratoire de mathématiques, 100 rue des maths 38610 Gières, France 
-</p> 
-<hr>
+        <div class="prose">
+          <p>
+            I defended my thesis on 26 June 2026 at
+            <a href="https://math.univ-cotedazur.fr/">LJAD</a>.
+          </p>
+          <p>
+            From September 2022 to June 2026, I was a PhD student at
+            <a href="https://math.univ-cotedazur.fr/">LJAD</a> and
+            <a href="https://www-fourier.ujf-grenoble.fr/">Institut Fourier</a>,
+            supervised by
+            <a href="https://chatterj.perso.math.cnrs.fr/">Indira Chatterji</a>
+            and
+            <a href="https://www-fourier.univ-grenoble-alpes.fr/~dahmani/">François Dahmani</a>.
+          </p>
+        </div>
+      </section>
 
-<p>
-I am working on geometric group theory. 
-</p>
+      <section id="research" class="section" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">01</p>
+          <h2 id="research-title">Research Interests</h2>
+        </div>
+        <div class="prose">
+          <p>
+            I work in geometric group theory, with particular interests in
+            finite-type and infinite-type hyperbolic surfaces and their mapping
+            class groups.
+          </p>
+        </div>
+      </section>
 
-<p> 
-Particularly, I am interested in both finite type and infinite type hyperbolic surfaces, and their mapping class groups.
-</p>
-  
-<hr>
+      <section id="publications" class="section" aria-labelledby="publications-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">02</p>
+          <h2 id="publications-title">Publications</h2>
+        </div>
 
-<h2>(Pre-)Publications</h2>
+        <ol class="publication-list" reversed>
+          <li>
+            <article class="publication">
+              <h3>A subgroup criterion and symmetric ping-pong for big mapping class groups</h3>
+              <p class="publication-meta">With J. H. Hernández · In preparation · 2026</p>
+            </article>
+          </li>
+          <li>
+            <article class="publication">
+              <h3>Simplicity of action-based C*-algebras for hyperbolic actions</h3>
+              <p class="publication-meta">
+                Preprint · 2026 ·
+                <a href="https://arxiv.org/abs/2604.12520">arXiv:2604.12520</a>
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="publication">
+              <h3>Property P<sub>naive</sub> for big mapping class groups</h3>
+              <p class="publication-meta">
+                Accepted by <cite>Annales de la Faculté des sciences de Toulouse</cite> · 2024 ·
+                <a href="https://arxiv.org/abs/2411.17594">arXiv:2411.17594</a>
+              </p>
+            </article>
+          </li>
+        </ol>
+      </section>
 
-<p>  
- [3] A subgroup criterion and symmetric ping-pong for big mapping class groups, with J. H. Hernández, in preparation, 2026
-</p>
-  
-<p>  
- [2] Simplicity of action-based $C^*$-algebras for hyperbolic actions, <a href="https://arxiv.org/abs/2604.12520">arXiv:2604.12520</a>, 2026
-</p>
+      <section id="talks" class="section" aria-labelledby="talks-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">03</p>
+          <h2 id="talks-title">Talks</h2>
+        </div>
 
-<p>  
- [1] Property $P_{naive}$ for big mapping class groups, <a href="https://arxiv.org/abs/2411.17594">arXiv:2411.17594</a>, 2024, accepted by Ann. Fac. Sci. Toulouse
-</p>
+        <ul class="talk-list">
+          <li>
+            <time datetime="2026-03-12">12 Mar 2026</time>
+            <div>
+              <h3>Long-distance Seminar on Geometric Group Theory</h3>
+              <p>Online</p>
+            </div>
+          </li>
+          <li>
+            <time>25 Nov 205</time>
+            <div>
+              <h3>Parole aux jeunes scientifiques du RT tétraèdre de Platon</h3>
+              <p>Montpellier</p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-<hr>
-  
-<h2>Academic talks</h2>
-  
-  <p>
-    • Long-distance seminar on Geometric Group Theory, online, 12 Mar 2026
-  </p>
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="section-number" aria-hidden="true">04</p>
+          <h2 id="contact-title">Contact</h2>
+        </div>
 
-  <p>
-    • Parole aux jeunes scientifiques du RT tétraèdre de Platon, Montpellier, 25 Nov 205
-  </p>
+        <dl class="contact-list">
+          <div>
+            <dt>Email</dt>
+            <dd>louty313 <span aria-hidden="true">at</span><span class="sr-only"> at </span> gmail <span aria-hidden="true">dot</span><span class="sr-only"> dot </span> com</dd>
+          </div>
+          <div>
+            <dt>Address</dt>
+            <dd>UMR 5582 — Laboratoire de mathématiques, 100 rue des maths, 38610 Gières, France</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
 
-
-</body>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span id="current-year">2026</span> Tianyi Lou / 娄天依</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
 </html>

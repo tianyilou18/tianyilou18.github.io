@@ -438,7 +438,7 @@ h1 span[lang] {
   margin: 0;
   padding: 0;
   list-style: none;
-  counter-reset: publications 4;
+  counter-reset: publications 6;
 }
 
 .publication-list > li {
